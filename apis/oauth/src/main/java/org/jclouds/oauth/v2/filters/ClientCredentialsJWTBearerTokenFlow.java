@@ -110,7 +110,7 @@ public class ClientCredentialsJWTBearerTokenFlow implements OAuthFilter {
                 credentialsSupplier.get().identity, // sub
                 audience, // aud
                 -1, // placeholder exp for the cache
-                -1, // placeholder iat for the cache
+                -1, // placeholder nbf for the cache
                 null // placeholder jti for the cache
         );
         ClientCredentialsAuthArgs authArgs = ClientCredentialsAuthArgs.create(
